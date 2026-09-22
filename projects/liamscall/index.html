@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liam’s Call — Mahan Alaei</title>
+  <meta name="description" content="Web design and development case study: Liam’s Call — a free caregiver-support website for mental health, addiction, and housing.">
+  <meta name="theme-color" content="#070708">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23070708' width='32' height='32'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia' font-size='14' fill='%23c084fc'%3EMA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"></span></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <a class="skip" href="#case">Skip to project</a>
+
+  <header class="nav" data-nav>
+    <a class="nav__logo" href="/">
+      <span class="nav__mark">MA</span>
+      <span class="nav__name">Mahan Alaei</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="/#work">Work</a>
+      <a href="/#approach">Approach</a>
+      <a href="/#about">About</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+    <a class="nav__cta" href="/#contact">Let’s talk</a>
+    <button class="nav__menu" type="button" aria-label="Open menu" aria-expanded="false" data-menu-btn>
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-nav" data-mobile-nav hidden>
+    <a href="/#work">Work</a>
+    <a href="/#approach">Approach</a>
+    <a href="/#about">About</a>
+    <a href="/#contact">Contact</a>
+  </div>
+
+  <main class="case" id="case">
+    <div class="case__top">
+      <a class="case__back" href="/#work">← All work</a>
+      <p class="eyebrow">01 · Case study</p>
+      <h1 class="case__title">Liam’s Call</h1>
+      <p class="case__role">Web designer &amp; web developer</p>
+      <p class="case__lede">
+        A free public website for caregivers and families facing mental health, addiction, and housing challenges —
+        calm chat UI, brand system, and a multi-page civic experience, live in production.
+      </p>
+      <div class="case__meta">
+        <a class="btn btn--primary" href="https://liamscall.com/" target="_blank" rel="noopener">Visit liamscall.com</a>
+        <ul class="tags">
+          <li>Brand</li><li>UI / UX</li><li>Chat</li><li>Civic</li>
+        </ul>
+      </div>
+    </div>
+
+    <figure class="case__hero">
+      <img src="home.jpg" alt="Liam’s Call chat home — full-bleed inspiration and support chat" width="1440" height="900">
+    </figure>
+
+    <div class="case__grid">
+      <aside class="case__aside">
+        <div>
+          <h2>Role</h2>
+          <p>Web designer &amp; web developer — brand, UX/UI, front-end, content structure, and shipping the live site.</p>
+        </div>
+        <div>
+          <h2>Stack</h2>
+          <p>HTML · CSS · JavaScript · Node/Express · Markdown content pipeline</p>
+        </div>
+        <div>
+          <h2>Links</h2>
+          <p>
+            <a class="text-link" href="https://liamscall.com/" target="_blank" rel="noopener">Live site</a><br>
+            <a class="text-link" href="https://liamscall.com/about" target="_blank" rel="noopener">About</a><br>
+            <a class="text-link" href="https://liamscall.com/resources" target="_blank" rel="noopener">Resources</a><br>
+            <a class="text-link" href="https://liamscall.com/blog" target="_blank" rel="noopener">Blog</a>
+          </p>
+        </div>
+      </aside>
+
+      <div class="case__copy">
+        <h2>Design problem</h2>
+        <p>
+          Families looking for help often land on cold directories, outdated phone lists, clinical jargon,
+          or flashy chatbot demos that overpromise. The brief was the opposite: a calm first screen,
+          clear hierarchy, mobile-first chat, and language that feels human at 2 a.m. Brand and UI had to
+          read as trustworthy social/civic care — not a startup landing page, not a hospital portal.
+        </p>
+
+        <h2>What I designed and shipped</h2>
+
+        <h3>Brand &amp; visual system</h3>
+        <p>
+          Product name, moth mark, and horizontal lockups. Forest-green / soft beige palette, typography,
+          and site chrome shared across pages. Tone of voice: warm, steady, non-clinical — with clear
+          crisis redirects when needed.
+        </p>
+
+        <h3>Core product UI — Chat</h3>
+        <p>
+          Full-bleed, quiet home composition with an inspirational line and primary chat surface.
+          Streaming conversation UI with send affordance and mobile navigation. Onboarding-safe copy
+          for what the tool is — and what it is not. Localized support framing when available.
+        </p>
+
+        <h3>Information architecture</h3>
+        <p>
+          <strong>Resources</strong> — verified Canada &amp; U.S. crisis lines and directories.
+          <strong>About</strong> — mission, audience, how the AI works, safety, FAQ.
+          <strong>Blog</strong> — caregiver articles with filters, readable layout, hero images.
+          <strong>Privacy &amp; Terms</strong> — plain legal pages for a public AI tool.
+          Shared sidebar / mobile nav so chat, blog, and resources feel like one product.
+        </p>
+
+        <h3>Content &amp; craft</h3>
+        <p>
+          Markdown → HTML blog with SEO-friendly structure, hero imagery, and a human review pass for
+          sensitive pieces. Responsive layouts on phone and desktop. Production deploy on a custom domain,
+          plus sitemap, robots, organization identity, and brand files for discoverability.
+        </p>
+
+        <p class="case__note">
+          Liam’s Call is not a therapist, crisis line, or emergency service. In a crisis, call or text
+          <strong>9-8-8</strong> (Canada &amp; U.S.) or <strong>9-1-1</strong> — and see
+          <a href="https://liamscall.com/resources" target="_blank" rel="noopener">/resources</a>.
+        </p>
+
+        <p class="case__close">
+          I built Liam’s Call as a complete web experience — brand, chat, resources, and articles —
+          because caregiver support should feel calm and clear, not like another form in a waiting room.
+        </p>
+      </div>
+    </div>
+
+    <section class="case__gallery">
+      <h2>Screens</h2>
+      <div class="case__shots">
+        <figure>
+          <img src="home.jpg" alt="Chat home" width="1440" height="900" loading="lazy">
+          <figcaption>Chat home</figcaption>
+        </figure>
+        <figure>
+          <img src="resources.jpg" alt="Resources page" width="1440" height="900" loading="lazy">
+          <figcaption>Resources</figcaption>
+        </figure>
+        <figure>
+          <img src="about.jpg" alt="About page" width="1440" height="900" loading="lazy">
+          <figcaption>About</figcaption>
+        </figure>
+        <figure>
+          <img src="blog.jpg" alt="Blog" width="1440" height="900" loading="lazy">
+          <figcaption>Blog</figcaption>
+        </figure>
+        <figure class="case__shots--mobile">
+          <img src="home-mobile.jpg" alt="Mobile chat home" width="390" height="844" loading="lazy">
+          <figcaption>Mobile</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="case__next">
+      <a href="/#work">← Back to work</a>
+      <a href="/projects/coco-mailo/">Next: CoCo Mailo →</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span data-year></span> Mahan Alaei. Designed in Toronto.</p>
+    <a href="/">Home</a>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
