@@ -65,6 +65,21 @@
 
   const finePointer = window.matchMedia("(pointer: fine)").matches;
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  document.querySelectorAll(".cover__video").forEach((video) => {
+    if (reduceMotion) {
+      video.pause();
+      video.removeAttribute("autoplay");
+      return;
+    }
+    const play = () => video.play().catch(() => {});
+    play();
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) video.pause();
+      else play();
+    });
+  });
+
   if (!finePointer || reduceMotion) return;
 
   document.body.classList.add("has-cursor");

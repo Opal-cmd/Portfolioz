@@ -521,6 +521,78 @@ body.is-hovering .cursor__ring {
     linear-gradient(165deg, #0c1a16, #070708 70%);
 }
 
+.cover--media {
+  padding: 0;
+  background: #0c1a16;
+}
+
+.cover__video,
+.cover__still {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cover__still {
+  display: none;
+}
+
+.project__shots {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  margin: 22px 0 0;
+}
+
+.project__shots figure {
+  margin: 0;
+}
+
+.project__shots img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: #0c1a16;
+}
+
+.project__shots figure:last-child img {
+  object-position: center top;
+}
+
+.project__shots figcaption {
+  margin-top: 6px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .project__shots {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .project__shots figure:nth-child(n + 4) {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cover__video {
+    display: none;
+  }
+
+  .cover__still {
+    display: block;
+  }
+}
+
 .cover__pulse {
   position: absolute;
   top: 28%;

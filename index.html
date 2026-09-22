@@ -104,12 +104,27 @@
       </div>
 
       <article class="project reveal">
-        <div class="project__visual cover cover--liam">
-          <div class="cover__pulse" aria-hidden="true"></div>
-          <div class="cover__chat" aria-hidden="true">
-            <span></span><span></span><span></span>
-          </div>
-          <p class="cover__word">Care</p>
+        <div class="project__visual cover cover--liam cover--media">
+          <video
+            class="cover__video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="assets/liamscall/poster.jpg"
+            aria-label="Tour of Liam’s Call: chat home, resources, about, blog, and mobile"
+          >
+            <source src="assets/liamscall/tour.mp4" type="video/mp4">
+          </video>
+          <img
+            class="cover__still"
+            src="assets/liamscall/home.jpg"
+            alt="Liam’s Call chat home — calm full-bleed hero with support chat"
+            width="1440"
+            height="900"
+            loading="lazy"
+          >
         </div>
         <div class="project__body">
           <span class="project__index">01</span>
@@ -128,6 +143,28 @@
             <ul class="tags">
               <li>Brand</li><li>UI / UX</li><li>Chat</li><li>Civic</li>
             </ul>
+            <div class="project__shots" aria-label="Liam’s Call screenshots">
+              <figure>
+                <img src="assets/liamscall/home.jpg" alt="Chat home" width="720" height="450" loading="lazy">
+                <figcaption>Chat</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/liamscall/resources.jpg" alt="Resources page" width="720" height="450" loading="lazy">
+                <figcaption>Resources</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/liamscall/about.jpg" alt="About page" width="720" height="450" loading="lazy">
+                <figcaption>About</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/liamscall/blog.jpg" alt="Blog" width="720" height="450" loading="lazy">
+                <figcaption>Blog</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/liamscall/home-mobile.jpg" alt="Mobile chat home" width="390" height="844" loading="lazy">
+                <figcaption>Mobile</figcaption>
+              </figure>
+            </div>
             <a class="text-link" href="https://liamscall.com/" target="_blank" rel="noopener">liamscall.com</a>
           </div>
         </div>
